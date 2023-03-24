@@ -1,3 +1,5 @@
+// Home page og the website
+
 import React from 'react'
 import Title from './Title'
 import Countries from './Countries'

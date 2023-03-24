@@ -1,3 +1,5 @@
+// Title section in the home page 
+
 import React from "react";
 
 function Title() {
