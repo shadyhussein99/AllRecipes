@@ -3,14 +3,15 @@ import { useState, useEffect } from "react";
 
 function Countries() {
 
-var [countryChosen,setCountryChosen] = useState("")
+var [countryChosen,setCountryChosen] = useState("")      // State of the country chosen by the user and used in the API to get data
+var [countryRecipes, setCountryRecipes] = useState([])   // State that contains the data of the country recipes
 
 useEffect( () => {
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${countryChosen}`)
     .then((res) => res.json())
     .then((res) => {
         const {meals} = res
-        console.log(meals);
+        setCountryRecipes(meals)
     })
 }
     ,[countryChosen]
