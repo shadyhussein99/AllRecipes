@@ -1,5 +1,6 @@
 import React from 'react'
 import Title from './Title'
+import Countries from './Countries'
 
 function App() {
 
@@ -7,7 +8,8 @@ function App() {
     <div>
 
       <Title />
-      
+      <Countries />
+
     </div>
   )
 }
