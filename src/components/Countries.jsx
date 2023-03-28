@@ -3,18 +3,21 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { countryRecipesData } from "../redux/countryRecipesSlice"
 
 function Countries() {
 
+    const dispatch = useDispatch()
+
     var [countryChosen, setCountryChosen] = useState("")      // State of the country chosen by the user and used in the API to get data
-    var [resultRecipes, setResultRecipes] = useState([])   // State that contains the data of the country recipes
 
     useEffect(() => {
         fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${countryChosen}`)
             .then((res) => res.json())
             .then((res) => {
                 const { meals } = res
-                setResultRecipes([meals])
+                dispatch(countryRecipesData(meals))
             })
     }
         , [countryChosen]
