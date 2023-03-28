@@ -2,11 +2,11 @@
 
 import React from "react";
 
-function CountryRecipes(props) {
-    return <div>
-        <img src={props.recipeImage} alt="recipe-pic" />
-        <p>{props.recipeName}</p>
-    </div>
+function CountryRecipes() {
+    return resultRecipes.map((value) => {<div>
+        <img src={value.strMealThumb} alt="recipe-pic" />
+        <p>{value.strMeal}</p>
+    </div>})
 }
 
 export default CountryRecipes

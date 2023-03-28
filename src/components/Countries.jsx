@@ -14,7 +14,7 @@ function Countries() {
             .then((res) => res.json())
             .then((res) => {
                 const { meals } = res
-                setResultRecipes(meals)
+                setResultRecipes([meals])
             })
     }
         , [countryChosen]
