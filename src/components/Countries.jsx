@@ -4,6 +4,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import {countryRecipes} from "../redux/countryRecipesSlice"
 
 
 function Countries() {
@@ -12,9 +13,16 @@ function Countries() {
 
     var [countryChosen, setCountryChosen] = useState("")      // State of the country chosen by the user and used in the API to get data
 
-   useEffect(() => {
-    
-   }, [])
+    useEffect(() => {
+        fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${countryChosen}`)
+            .then((res) => res.json())
+            .then((res) => {
+                const { meals } = res
+               dispatch(countryRecipes(meals))
+            })
+    }
+        , [countryChosen]
+    )
 
     return <div>
 

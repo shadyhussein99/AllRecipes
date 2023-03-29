@@ -1,23 +1,16 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-
- export const fetchCountryRecipes = createAsyncThunk("countryRecipes/fetchCountryRecipes", async (_, thunkAPI) => {
-  const res = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=egyptian`);
-  const data = await res.json();
-  const { meals } = data
-  .catch((error) => console.log(error))
-})
+import { createSlice } from '@reduxjs/toolkit'
 
 export const countryRecipesSlice = createSlice({
   name: 'countryRecipes',
   initialState: {
     value: [],
   },
-  extraReducers: (builder) =>{
-    builder.addCase(fetchCountryRecipes.fulfilled, (state, action) => {
-      console.log(action);
-    })
+ reducers: {
+  countryRecipes: (state, action) => {
+    state.value = action.payload
   }
+ }
 })
 
-
+export const { countryRecipes } = countryRecipesSlice.actions
 export default countryRecipesSlice.reducer
