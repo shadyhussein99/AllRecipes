@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './components/App'
-import CountryRecipes from './components/CountryRecipes';
 
 import {
   createBrowserRouter,
@@ -12,10 +11,6 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-  },
-  {
-    path: "country-recipes",
-    element: <CountryRecipes />,
   },
 ]);
 
