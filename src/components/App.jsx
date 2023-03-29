@@ -5,6 +5,7 @@ import { useState } from 'react'
 import Title from './Title'
 import Countries from './Countries'
 import CountryRecipes from './CountryRecipes'
+import LatestRecipes from "./LatestRecipes"
 
 function App() {
 
@@ -15,14 +16,18 @@ function App() {
     <div>
 
       <Title />
+
       <Countries
         setResultRecipes={setResultRecipes}
         setCountryRecipesShown={setCountryRecipesShown}
       />
+
       {countryRecipesShown && resultRecipes ? resultRecipes.map((value) => <CountryRecipes 
         recipeImage={value.strMealThumb}
         recipeName={value.strMeal}
       />) : null}
+
+      <LatestRecipes />
 
     </div>
   )

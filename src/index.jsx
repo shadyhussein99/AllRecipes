@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './components/App'
+import FirstRecipeDescription from './components/FirstRecipeDescription'
 
 import {
   createBrowserRouter,
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "first-recipe-description",
+    element: <FirstRecipeDescription />,
   },
 ]);
 
