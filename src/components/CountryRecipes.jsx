@@ -1,4 +1,4 @@
-// The page appears with the recipes when the user selects a ccountry
+// The section that appears when the user selects a country
 
 import React from "react";
 

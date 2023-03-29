@@ -15,7 +15,12 @@ function LatestRecipes() {
                 reference="/first-recipe-description"
             />
 
-            <MiniLatestRecipes />
+            <MiniLatestRecipes 
+                image="/pics/latestRecipes/firstLatest.PNG"
+                heading="ICE CREAM"
+                description="Carrot Cake Ice Cream"
+                reference="/first-recipe-description"
+            />
 
             <MiniLatestRecipes />
 
