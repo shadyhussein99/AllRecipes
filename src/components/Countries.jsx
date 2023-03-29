@@ -4,7 +4,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { fetchCountryRecipes } from "../redux/countryRecipesSlice"
+
 
 function Countries() {
 
@@ -12,9 +12,9 @@ function Countries() {
 
     var [countryChosen, setCountryChosen] = useState("")      // State of the country chosen by the user and used in the API to get data
 
-    useEffect(() => {
-        dispatch(fetchCountryRecipes(countryChosen))
-    }, [dispatch])
+   useEffect(() => {
+    
+   }, [])
 
     return <div>
 
