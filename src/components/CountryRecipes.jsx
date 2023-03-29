@@ -8,12 +8,14 @@ function CountryRecipes() {
     const countryRecipes = useSelector((state) => state.countryRecipes.value)
 
     return <div>
+
         {countryRecipes && countryRecipes.map((value) => {
             <div>
                 <img src={value.strMealThumb} alt="recipe-pic" />
-                <p>{value.strMeal}hjkhh</p>
+                <p>{value.strMeal}</p>
             </div>
         })}
+
     </div>
 }
 

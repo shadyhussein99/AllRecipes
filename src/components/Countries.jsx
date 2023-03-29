@@ -63,7 +63,7 @@ function Countries() {
             src="/pics/dutch.PNG" alt="country-flag" />
 
         <img
-            onClick={() => { setCountryChosen("egyptian"), dispatch(fetchCountryRecipes(countryChosen)) }}
+            onClick={() => { setCountryChosen("egyptian") }}
             className="flag"
             src="/pics/egyptian.PNG" alt="country-flag" />
 

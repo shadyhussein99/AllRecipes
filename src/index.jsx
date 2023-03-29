@@ -13,19 +13,24 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element:
+      <Provider store={store}>
+        <App />
+      </Provider>,
   },
   {
     path: "country-recipes",
     element:
-      <CountryRecipes />,
+      <Provider store={store}>
+        <CountryRecipes />
+      </Provider>,
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Provider store={store}>
-      <RouterProvider router={router} />
-    </Provider>
+
+    <RouterProvider router={router} />
+
   </React.StrictMode>,
 )
