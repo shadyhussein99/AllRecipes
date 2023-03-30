@@ -24,7 +24,7 @@ function Countries(props) {
             <h2 className=" inline-block mt-24 text-orange-600 text-3xl font-bold border-b-2 border-black">Browse Country</h2>
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-16">
             <div className="mt-16 grid grid-cols-5 justify-center">
                 <img
                     onClick={() => { setCountryChosen("american"), props.setCountryRecipesShown(true) }}
