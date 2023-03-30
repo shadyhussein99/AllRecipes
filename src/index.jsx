@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './components/App'
+import About from './components/About'
 import FirstRecipeDescription from './components/recipesDescription/FirstRecipeDescription'
 import SecondRecipeDescription from './components/recipesDescription/SecondRecipeDescription'
 import ThirdRecipeDescription from './components/recipesDescription/ThirdRecipeDescription'
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "sixth-recipe-description",
     element: <SixthRecipeDescription />,
+  },
+  {
+    path: "about",
+    element: <About />,
   },
 ]);
 

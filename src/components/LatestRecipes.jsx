@@ -6,7 +6,7 @@ import MiniLatestRecipes from "./MiniLatestRecipes";
 
 function LatestRecipes() {
 
-    return <div className="bg-gray-100">
+    return <div id="latestRecipes" className="bg-gray-100">
 
         <div className="flex items-end justify-center">
             <div className="flex justify-center">
