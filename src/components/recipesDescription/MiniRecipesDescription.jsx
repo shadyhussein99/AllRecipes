@@ -3,16 +3,16 @@
 import React from "react";
 
 function MiniRecipesDescription(props) {
-    return <div>
-        <h1>{props.heading}</h1>
+    return <div className="mx-7">
+        <h1 className="text-4xl font-bold ">{props.heading}</h1>
 
-        <p>{props.description}</p>
+        <p className="mt-14">{props.description}</p>
 
-        <img src={props.image} alt="recipe-img" />
+        <img className="mt-12" src={props.image} alt="recipe-img" />
 
-        <h2>Ingredients</h2>
+        <h2 className="mt-24 text-3xl font-bold">Ingredients</h2>
 
-        <ul>
+        <ul className="mt-12">
             <li>{props.list1}</li>
             <li>{props.list2}</li>
             <li>{props.list3}</li>
@@ -25,26 +25,26 @@ function MiniRecipesDescription(props) {
             <li>{props.list10}</li>
         </ul>
 
-        <h2>Directions</h2>
+        <h2 className="mt-24 text-3xl font-bold mb-10">Directions</h2>
 
         <div>
-            <p>Step 1</p>
-            <p>{props.step1}</p>
+            <p className="description-step">Step 1</p>
+            <p className="step-paragraph">{props.step1}</p>
         </div>
 
         <div>
-            <p>Step 2</p>
-            <p>{props.step2}</p>
+            <p className="description-step">Step 2</p>
+            <p className="step-paragraph">{props.step2}</p>
         </div>
 
         <div>
-            <p>Step 3</p>
-            <p>{props.step3}</p>
+            <p className="description-step">Step 3</p>
+            <p className="step-paragraph">{props.step3}</p>
         </div>
 
         <div>
-            <p>Step 4</p>
-            <p>{props.step4}</p>
+            <p className="description-step">Step 4</p>
+            <p className="step-paragraph">{props.step4}</p>
         </div>
 
     </div>

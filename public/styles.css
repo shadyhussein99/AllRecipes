@@ -2,9 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    line-height: 2;
+}
+
 .title {
     background-image: url("./pics/back.PNG");
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
+}
+.flag {
+    @apply mx-4 my-3 cursor-pointer hover:-translate-x-1 hover:-translate-y-1
+}
+
+.description-step {
+    @apply font-bold text-lg
+}
+
+.step-paragraph {
+    @apply mb-8
 }
