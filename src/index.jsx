@@ -1,7 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './components/App'
-import FirstRecipeDescription from './components/FirstRecipeDescription'
+import FirstRecipeDescription from './components/recipesDescription/FirstRecipeDescription'
+import SecondRecipeDescription from './components/recipesDescription/SecondRecipeDescription'
+import ThirdRecipeDescription from './components/recipesDescription/ThirdRecipeDescription'
+import FourthRecipeDescription from './components/recipesDescription/FourthRecipeDescription'
+import FifthRecipeDescription from './components/recipesDescription/FifthRecipeDescription'
+import SixthRecipeDescription from './components/recipesDescription/sixthRecipeDescription'
 
 import {
   createBrowserRouter,
@@ -16,6 +21,26 @@ const router = createBrowserRouter([
   {
     path: "first-recipe-description",
     element: <FirstRecipeDescription />,
+  },
+  {
+    path: "second-recipe-description",
+    element: <SecondRecipeDescription />,
+  },
+  {
+    path: "third-recipe-description",
+    element: <ThirdRecipeDescription />,
+  },
+  {
+    path: "fourth-recipe-description",
+    element: <FourthRecipeDescription />,
+  },
+  {
+    path: "fifth-recipe-description",
+    element: <FifthRecipeDescription />,
+  },
+  {
+    path: "sixth-recipe-description",
+    element: <SixthRecipeDescription />,
   },
 ]);
 

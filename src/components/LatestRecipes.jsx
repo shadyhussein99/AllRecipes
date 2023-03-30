@@ -22,13 +22,33 @@ function LatestRecipes() {
                 reference="/second-recipe-description"
             />
 
-            <MiniLatestRecipes />
+            <MiniLatestRecipes 
+                image="/pics/latestRecipes/thirdLatest.PNG"
+                heading="RICE BOWL"
+                description="Easy Korean Ground Beef Bowl"
+                reference="/third-recipe-description"
+            />
 
-            <MiniLatestRecipes />
+            <MiniLatestRecipes 
+                image="/pics/latestRecipes/fourthLatest.PNG"
+                heading="BREAKFAST CASSEROLE RECIPES"
+                description="Peanut Butter and Jelly French Toast Casserole"
+                reference="/fourth-recipe-description"
+            />
 
-            <MiniLatestRecipes />
+            <MiniLatestRecipes 
+                image="/pics/latestRecipes/fifthLatest.PNG"
+                heading="TACO RECIPES"
+                description="Salmon Tacos with Mango Salsa"
+                reference="/fifth-recipe-description"
+            />
 
-            <MiniLatestRecipes />
+            <MiniLatestRecipes 
+                image="/pics/latestRecipes/sixthLatest.PNG"
+                heading="MAIN DISH"
+                description="Gochujang Noodles"
+                reference="/sixth-recipe-description"
+            />
 
     </div>
 }
