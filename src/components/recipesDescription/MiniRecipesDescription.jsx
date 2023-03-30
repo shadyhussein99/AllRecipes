@@ -3,12 +3,16 @@
 import React from "react";
 
 function MiniRecipesDescription(props) {
-    return <div className="mx-7">
-        <h1 className="text-4xl font-bold ">{props.heading}</h1>
+    return <div className="mx-7 md:mx-16 lg:mx-20 xl:mx-72">
+        <h1 className="text-4xl font-bold xl:text-5xl ">{props.heading}</h1>
 
-        <p className="mt-14">{props.description}</p>
+        <div>{props.svgStar}</div>
 
-        <img className="mt-12" src={props.image} alt="recipe-img" />
+        <p className="mt-14 md:mr-20 lg:mr-80 lg:mt-10">{props.description}</p>
+
+        <div className="">
+            <img className="mt-12 h-96 w-full object-fill lg:w-auto lg:mt-9" src={props.image} alt="recipe-img" />
+        </div>
 
         <h2 className="mt-24 text-3xl font-bold">Ingredients</h2>
 

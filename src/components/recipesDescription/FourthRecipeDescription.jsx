@@ -2,12 +2,15 @@
 
 import React from "react";
 import MiniRecipesDescription from "./MiniRecipesDescription";
+import SVGStar from "../SVGStar";
 
 function FourthRecipeDescription() {
     return <div>
         <MiniRecipesDescription 
         
             heading="Peanut Butter and Jelly French Toast Casserole"
+
+            svgStar= {<SVGStar />}
 
             description="If you're a PB&J fan, get ready for a treat. This fun twist on French toast is a combination of bread pudding and a peanut butter and jelly sandwich."
 

@@ -2,12 +2,15 @@
 
 import React from "react";
 import MiniRecipesDescription from "./MiniRecipesDescription";
+import SVGStar from "../SVGStar";
 
 function SecondRecipeDescription() {
     return <div>
         <MiniRecipesDescription 
         
             heading="Spicy Baked Shrimp"
+
+            svgStar= {<SVGStar />}
 
             description="These spicy baked shrimp are made with a perfect blend of spices! So easy and quick to make!"
 

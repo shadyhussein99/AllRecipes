@@ -2,12 +2,15 @@
 
 import React from "react";
 import MiniRecipesDescription from "./MiniRecipesDescription";
+import SVGStar from "../SVGStar";
 
 function FifthRecipeDescription() {
     return <div>
         <MiniRecipesDescription 
         
             heading="Salmon Tacos with Mango Salsa"
+
+            svgStar={<SVGStar />}
 
             description="Grilled salmon wrapped up in a small tortilla, topped with peach-mango salsa, shredded cabbage, avocado, and a special sauce."
 

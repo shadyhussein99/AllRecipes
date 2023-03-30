@@ -2,12 +2,15 @@
 
 import React from "react";
 import MiniRecipesDescription from "./MiniRecipesDescription";
+import SVGStar from "../SVGStar";
 
 function FirstRecipeDescription() {
     return <div>
         <MiniRecipesDescription 
         
             heading="Carrot Cake Ice Cream"
+
+            svgStar= {<SVGStar />}
 
             description="Of all the cakes that could be converted into ice creams, carrot cake might not be the first cake that comes to mind, but this turned out incredibly well. This is a no-churn ice cream and you don't need an ice cream maker."
 

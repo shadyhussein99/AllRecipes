@@ -2,12 +2,15 @@
 
 import React from "react";
 import MiniRecipesDescription from "./MiniRecipesDescription";
+import SVGStar from "../SVGStar";
 
 function ThirdRecipeDescription() {
     return <div>
         <MiniRecipesDescription 
         
             heading="Easy Korean Ground Beef Bowl"
+
+            svgStar= {<SVGStar />}
 
             description="This Korean beef bowl is quick and easy to make. The ingredients can easily be adjusted to suit your taste. Serve over warm rice or spiralized vegetables."
 

@@ -18,136 +18,144 @@ function Countries(props) {
         , [countryChosen]
     )
 
-    return <div>
+    return <div className="bg-gray-100">
 
-        <div className="flex justify-center">
-            <h2 className=" inline-block mt-24 text-orange-600 text-3xl font-bold border-b-2 border-black">Browse Country</h2>
+        <div className="flex items-end justify-center">
+            <div className="flex justify-center">
+                <h2 className=" inline-block mt-24 text-3xl font-bold">Browse Country</h2>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 ml-3 text-orange-600">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+
         </div>
 
-        <div className="flex justify-center mb-16">
-            <div className="mt-16 grid grid-cols-5 justify-center">
+
+        <div className="flex justify-center pb-16 lg:pb-28">
+            <div className="mt-16 grid grid-cols-5 justify-center md:grid-cols-7">
                 <img
-                    onClick={() => { setCountryChosen("american"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("american") }}
                     className="flag"
                     src="/pics/countries/american.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("british"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("british") }}
                     className="flag"
                     src="/pics/countries/british.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("canadian"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("canadian") }}
                     className="flag"
                     src="/pics/countries/canadian.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("chinese"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("chinese") }}
                     className="flag"
                     src="/pics/countries/chinese.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("croatian"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("croatian") }}
                     className="flag"
                     src="/pics/countries/croatian.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("dutch"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("dutch") }}
                     className="flag"
                     src="/pics/countries/dutch.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("egyptian"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("egyptian") }}
                     className="flag"
                     src="/pics/countries/egyptian.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("french"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("french") }}
                     className="flag"
                     src="/pics/countries/french.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("greek"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("greek") }}
                     className="flag"
                     src="/pics/countries/greek.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("indian"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("indian") }}
                     className="flag"
                     src="/pics/countries/indian.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("irish"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("irish") }}
                     className="flag"
                     src="/pics/countries/irish.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("italian"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("italian") }}
                     className="flag"
                     src="/pics/countries/italian.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("jamaican"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("jamaican") }}
                     className="flag"
                     src="/pics/countries/jamaican.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("japanese"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("japanese") }}
                     className="flag"
                     src="/pics/countries/japanese.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("kenyan"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("kenyan") }}
                     className="flag"
                     src="/pics/countries/kenyan.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("malaysian"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("malaysian") }}
                     className="flag"
                     src="/pics/countries/malaysian.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("mexican"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("mexican") }}
                     className="flag"
                     src="/pics/countries/mexican.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("moroccan"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("moroccan") }}
                     className="flag"
                     src="/pics/countries/moroccan.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("polish"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("polish") }}
                     className="flag"
                     src="/pics/countries/polish.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("portuguese"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("portuguese") }}
                     className="flag"
                     src="/pics/countries/portuguese.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("russian"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("russian") }}
                     className="flag"
                     src="/pics/countries/russian.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("spanish"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("spanish") }}
                     className="flag"
                     src="/pics/countries/spanish.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("thai"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("thai") }}
                     className="flag"
                     src="/pics/countries/thai.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("tunisian"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("tunisian") }}
                     className="flag"
                     src="/pics/countries/tunisian.PNG" alt="country-flag" />
 
                 <img
-                    onClick={() => { setCountryChosen("turkish"), props.setCountryRecipesShown(true) }}
+                    onClick={() => { setCountryChosen("turkish") }}
                     className="flag"
                     src="/pics/countries/turkish.PNG" alt="country-flag" />
             </div>

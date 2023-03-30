@@ -2,12 +2,15 @@
 
 import React from "react";
 import MiniRecipesDescription from "./MiniRecipesDescription";
+import SVGStar from "../SVGStar";
 
 function SixthRecipeDescription() {
     return <div>
         <MiniRecipesDescription 
         
             heading="Gochujang Noodles"
+
+            svgStar= {<SVGStar />}
 
             description="This simple udon noodle recipe with kale and green onions is flavored with a sweet and spicy gochujang sauce."
 
