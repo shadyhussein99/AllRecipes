@@ -15,7 +15,7 @@ function FirstRecipeDescription() {
 
             list1="2 tablespoons unsalted butter"
 
-            list2="1 1/4 cups finely shredded carrots"
+            list2="1/4 cups finely shredded carrots"
 
             list3="1/3 cup brown sugar"
 
