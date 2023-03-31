@@ -10,12 +10,8 @@ p {
     @apply text-gray-800
 }
 
-.nav-list {
-    @apply hover:-translate-x-1 hover:-translate-y-1 transition ease-out duration-200
-}
-
 .nav-a {
-    @apply mr-8 text-orange-600 text-xl
+    @apply mr-8 text-xl hover:text-orange-600
 }
 
 .title {
