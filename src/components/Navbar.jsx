@@ -8,7 +8,7 @@ function Navbar() {
 
     var [navIconClicked, setNavIconClicked] = useState(false)
 
-    return <div>
+    return <div className=" bg-white sticky top-0 z-10">
 
         <nav className="flex justify-between shadow-xl">
 
