@@ -9,19 +9,19 @@ function About() {
 
         <Navbar />
 
-        <div>
-            <div>
+        <div className="grid grid-cols-4">
+            <div className="col-span-1">
                 <h5>In this article</h5>
 
-                <a>About AllRecipes</a>
-                <a>AllRecipes Magazine</a>
-                <a>AllRecipes Community</a>
-                <a>Community Guidelines</a>
-                <a>Diversity and Inclusion</a>
-                <a>Editorial Guidelines</a>
+                <a className="about-a" href="#AboutAllRecipes">About AllRecipes</a>
+                <a className="about-a" href="#AllRecipesMagazine">AllRecipes Magazine</a>
+                <a className="about-a" href="#AllRecipesCommunity">AllRecipes Community</a>
+                <a className="about-a" href="#CommunityGuidelines">Community Guidelines</a>
+                <a className="about-a" href="#DiversityAndInclusion">Diversity and Inclusion</a>
+                <a className="about-a" href="#EditorialGuidelines">Editorial Guidelines</a>
             </div>
 
-            <div>
+            <div className=" col-span-3">
 
                 <h2>About Us</h2>
 
@@ -66,7 +66,7 @@ function About() {
                     firstParagraph="At Allrecipes, we take great pride in the quality of our content. Our writers, photographers, and editors create original, accurate, and engaging content that reflects the interests and concerns of home cooks, and our recipe editors verify all user submissions before publication. "
                     secondParagraph="Original illustrations, graphics, images, and videos are created by internal teams who collaborate with experts in their fields to produce assets that represent diverse voices, perspectives, and contexts. Photos and videos are not edited in any way that may cause them to be false or misleading."
                 />
-                
+
             </div>
         </div>
     </div>
