@@ -3,12 +3,12 @@
 import React from "react";
 
 function MiniAbout(props) {
-    
-    return <div id={props.id}>
 
-        <h3>{props.heading}</h3>
+    return <div id={props.id} className="mt-10">
 
-        <p>{props.firstParagraph}</p>
+        <h3 className="text-orange-600 text-3xl font-bold mb-6">{props.heading}</h3>
+
+        <p className="mb-4">{props.firstParagraph}</p>
 
         <p>{props.secondParagraph}</p>
 

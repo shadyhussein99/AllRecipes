@@ -10,6 +10,10 @@ p {
     @apply text-gray-800
 }
 
+a {
+    @apply text-gray-800
+}
+
 .nav-a {
     @apply mr-8 text-xl hover:text-orange-600
 }
@@ -34,5 +38,5 @@ p {
 }
 
 .about-a {
-    @apply block
+    @apply inline-block col-span-1 hover:border-b-2 hover:border-orange-600 mb-2
 }
