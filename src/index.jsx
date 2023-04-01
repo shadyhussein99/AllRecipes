@@ -8,6 +8,7 @@ import ThirdRecipeDescription from './components/recipesDescription/ThirdRecipeD
 import FourthRecipeDescription from './components/recipesDescription/FourthRecipeDescription'
 import FifthRecipeDescription from './components/recipesDescription/FifthRecipeDescription'
 import SixthRecipeDescription from './components/recipesDescription/sixthRecipeDescription'
+import Register from './components/Register'
 
 import {
   createBrowserRouter,
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
   {
     path: "about",
     element: <About />,
+  },
+  {
+    path: "register",
+    element: <Register />,
   },
 ]);
 

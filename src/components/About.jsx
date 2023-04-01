@@ -3,41 +3,45 @@
 import React from "react";
 import Navbar from "./Navbar";
 import MiniAbout from "./MiniAbout";
+import Footer from "./Footer";
 
 function About() {
     return <div>
 
         <Navbar />
 
-        <div className="mx-8 sm:mx-16">
-            <div className=" bg-gray-100 mt-10 px-4 pb-5">
-                <h5 className="font-bold pt-7 text-xl">In this article</h5>
+        <div className=" mb-32 mx-8 sm:mx-16 md:grid md:grid-cols-4 lg:mx-24 xl:mx-44">
+            <div className=" bg-gray-100 mt-10 pb-5 md:col-span-1 xl:w-60 ">
 
-                <div className="mt-4">
-                    <div>
-                        <a className="about-a" href="#AboutAllRecipes">About AllRecipes</a>
-                    </div>
-                    <div>
-                        <a className="about-a" href="#AllRecipesMagazine">AllRecipes Magazine</a>
-                    </div>
-                    <div>
-                        <a className="about-a" href="#AllRecipesCommunity">AllRecipes Community</a>
-                    </div>
-                    <div>
-                        <a className="about-a" href="#CommunityGuidelines">Community Guidelines</a>
-                    </div>
-                    <div>
-                        <a className="about-a" href="#DiversityAndInclusion">Diversity and Inclusion</a>
-                    </div>
-                    <div>
-                        <a className="about-a" href="#EditorialGuidelines">Editorial Guidelines</a>
+                <div className="pl-5 md:sticky md:top-36 ">
+                    <h5 className="font-bold pt-7 text-xl">In this article</h5>
+
+                    <div className="mt-4">
+                        <div>
+                            <a className="about-a" href="#AboutAllRecipes">About AllRecipes</a>
+                        </div>
+                        <div>
+                            <a className="about-a" href="#AllRecipesMagazine">AllRecipes Magazine</a>
+                        </div>
+                        <div>
+                            <a className="about-a" href="#AllRecipesCommunity">AllRecipes Community</a>
+                        </div>
+                        <div>
+                            <a className="about-a" href="#CommunityGuidelines">Community Guidelines</a>
+                        </div>
+                        <div>
+                            <a className="about-a" href="#DiversityAndInclusion">Diversity and Inclusion</a>
+                        </div>
+                        <div>
+                            <a className="about-a" href="#EditorialGuidelines">Editorial Guidelines</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div className=" mt-12">
+            <div className=" mt-12 md:col-span-3 md:ml-12 lg:mx-24">
 
-                <h2 className="text-4xl font-bold">About Us</h2>
+                <h2 className="text-4xl font-bold md:text-5xl">About Us</h2>
 
                 <MiniAbout
                     id="AboutAllRecipes"
@@ -83,6 +87,8 @@ function About() {
 
             </div>
         </div>
+
+        <Footer />
     </div>
 }
 

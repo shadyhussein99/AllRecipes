@@ -19,7 +19,7 @@ a {
 }
 
 .title {
-    background-image: url("./pics/back.PNG");
+    background-image: url("./pics/background.PNG");
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;

@@ -13,17 +13,13 @@ function Navbar() {
         <nav className="flex justify-between shadow-xl">
 
 
-                <h1 className=" text-orange-600 font-nav text-heading py-7 text-3xl ml-10 md:text-4xl lg:ml-24 lg:py-9 xl:ml-36">
-                    <a href="">ALLRecipes</a>
+                <h1 className=" flex font-nav text-heading py-7 text-3xl ml-10 md:text-4xl lg:ml-24 lg:py-9 xl:ml-36">
+                    <a href="/" className="text-orange-600">ALLRecipes</a>
+                    <img className="w-12" src="/pics/spoon2.png" alt="spoon-pic" />
                 </h1>
 
 
                 <ul className="hidden md:flex md:items-center py-7 ml-auto lg:py-9 lg:mr-10 xl:mr-16">
-
-
-                    <li>
-                        <a href="#latestRecipes" className="nav-a">Latest Recipes</a>
-                    </li>
 
                     <li>
                        <Link to="/about" className="nav-a">About Us</Link>
@@ -34,7 +30,7 @@ function Navbar() {
                     </li>
 
                     <li>
-                    <Link to="" className="nav-a">Register</Link>
+                    <Link to="/register" className="nav-a">Register</Link>
                     </li>
 
                 </ul>
@@ -55,10 +51,6 @@ function Navbar() {
                     <ul className="md:hidden mt-10">
 
                         <li className="mt-2">
-                        <a href="#latestRecipes" className="nav-a">Latest Recipes</a>
-                        </li>
-
-                        <li className="mt-2">
                         <Link to="/about" className="nav-a">About Us</Link>
                         </li>
 
@@ -67,7 +59,7 @@ function Navbar() {
                         </li>
 
                         <li className="mt-2">
-                        <Link to="" className="nav-a">Register</Link>
+                        <Link to="/register" className="nav-a">Register</Link>
                         </li>
 
                     </ul>

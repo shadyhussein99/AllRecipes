@@ -7,6 +7,7 @@ import Title from './Title'
 import Countries from './Countries'
 import CountryRecipes from './CountryRecipes'
 import LatestRecipes from "./LatestRecipes"
+import Footer from './Footer'
 
 function App() {
 
@@ -29,6 +30,8 @@ function App() {
       />) : null}
 
       <LatestRecipes />
+
+      <Footer />
 
     </div>
   )
