@@ -75,7 +75,7 @@ function Register() {
                 placeholder=""
             />
 
-            {!validEmail && <p className=" text-red-500">Please enter a valid email address</p>}
+            {!validEmail && <p className=" text-red-500 text-sm">Please enter a valid email address</p>}
 
             <MiniForm
                 label="Password"
@@ -84,7 +84,7 @@ function Register() {
                 placeholder=""
             />
 
-            {!Password && <p className="text-red-500">At least 8 characters long</p>}
+            {!Password && <p className="text-red-500 text-sm">At least 8 characters long</p>}
 
             {disableButton ?
 

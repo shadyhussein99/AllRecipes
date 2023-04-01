@@ -95,7 +95,7 @@ function Register() {
                 placeholder=""
             />
 
-            {!validEmail && <p className="text-red-500">Please enter a valid email address</p>}
+            {!validEmail && <p className="text-red-500 text-sm">Please enter a valid email address</p>}
 
             <MiniForm
                 label="Create password"
@@ -104,7 +104,7 @@ function Register() {
                 placeholder=""
             />
 
-            {!createPassword && <p className="text-red-500">At least 8 characters long</p>}
+            {!createPassword && <p className="text-red-500 text-sm">At least 8 characters long</p>}
 
             <MiniForm
                 label="Confirm password"
@@ -113,7 +113,7 @@ function Register() {
                 placeholder=""
             />
 
-            {!confirmPassword && <p className="text-red-500">Please match both passwords</p>}
+            {!confirmPassword && <p className="text-red-500 text-sm">Please match both passwords</p>}
 
             {disableButton ?
 
