@@ -8,14 +8,14 @@ function Navbar() {
 
     var [navIconClicked, setNavIconClicked] = useState(false)
 
-    return <div className=" bg-white sticky top-0">
+    return <div className=" bg-white sticky top-0 z-10">
 
         <nav className="flex justify-between shadow-xl">
 
 
                 <h1 className=" flex font-nav text-heading py-7 text-3xl ml-10 md:text-4xl lg:ml-24 lg:py-9 xl:ml-36">
-                    <a href="/" className="text-orange-600">ALLRecipes</a>
-                    <img className="w-12 h-12" src="/pics/spoon2.png" alt="spoon-pic" />
+                    <a href="/" className="text-orange-600 font-heading">ALLRecipes</a>
+                    <img className="w-12 h-12" src="/pics/spoon.png" alt="spoon-pic" />
                 </h1>
 
 

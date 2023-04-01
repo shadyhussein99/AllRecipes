@@ -9,8 +9,8 @@ function CountryRecipes(props) {
             <img src={props.recipeImage} alt="recipe-pic" />
         </div>
 
-        <div className="col-span-2 ml-6 flex items-center text-xl font-bold mr-8 lg:text-2xl lg:ml-16 xl:ml-36">
-            <p>{props.recipeName}</p>
+        <div className="col-span-2 ml-6 flex items-center font-bold mr-8 lg:ml-16 xl:ml-36">
+            <p className="text-xl lg:text-2xl">{props.recipeName}</p>
         </div>
 
     </div>

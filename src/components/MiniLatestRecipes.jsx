@@ -10,7 +10,7 @@ function MiniLatestRecipes(props) {
 
             <img className="rounded-md w-full" src={props.image} alt="recipe-img" />
             <p className="text-gray-600 font-semibold mt-4">{props.heading}</p>
-            <h2 className=" text-3xl font-bold pt-2 sm:text-2xl">{props.description}</h2>
+            <h2 className=" text-black text-3xl font-bold pt-2 sm:text-2xl">{props.description}</h2>
 
         </div>
         </div>

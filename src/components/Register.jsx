@@ -85,7 +85,7 @@ function Register() {
         <Navbar />
 
         <div className="my-16 mx-20 rounded-2xl shadow-xl p-8 sm:mx-32 md:mx-48 md:my-24 lg:mx-80 xl:mx-96 xl:px-20">
-            <img className="w-28 rounded-2xl" src="/pics/spoon2.png" alt="earth-pic" />
+            <img className="w-28 rounded-2xl" src="/pics/spoon.png" alt="earth-pic" />
             <h3 className=" text-3xl font-bold text-orange-600 mt-6">Create your account</h3>
 
             <MiniForm

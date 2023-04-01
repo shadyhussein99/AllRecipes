@@ -2,13 +2,14 @@
 
 import React from "react";
 import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 function MiniRecipesDescription(props) {
     return <div>
     
         <Navbar />
 
-        <div className="mx-7 md:mx-16 lg:mx-20 xl:mx-72">
+        <div className="mx-7 mb-32 md:mx-16 lg:mx-20 xl:mx-72">
             <h1 className="text-4xl mt-16 font-bold xl:text-5xl ">{props.heading}</h1>
 
             <div>{props.svgStar}</div>
@@ -57,6 +58,8 @@ function MiniRecipesDescription(props) {
             </div>
 
         </div>
+
+        <Footer />
     </div>
 }
 
