@@ -81,19 +81,18 @@ function Register() {
     }, [validEmail, createPassword, confirmPassword, emailChange, createPasswordChange, confirmPasswordChange])
 
     return <div>
+
         <Navbar />
-        <div className="">
-            <img className="" src="/pics/spoon2.png" alt="earth-pic" />
-            <h3 className="">Create your account</h3>
+
+        <div className="mt-16 mb-16 mx-20 rounded-2xl shadow-xl p-8">
+            <img className="w-28 rounded-2xl" src="/pics/spoon2.png" alt="earth-pic" />
+            <h3 className=" text-3xl font-bold text-orange-600 mt-6">Create your account</h3>
 
             <MiniForm
                 label="Email"
                 change={handleEmail}
                 type="email"
                 placeholder=""
-                divClass="miniForm-in-register"
-                inputClass="form-control register-input"
-                labelClass="register-label"
             />
 
             {!validEmail && <p className="">Please enter a valid email address</p>}
@@ -103,9 +102,6 @@ function Register() {
                 change={handleCreatePassword}
                 type="password"
                 placeholder=""
-                divClass="miniForm-in-register"
-                inputClass="form-control register-input"
-                labelClass="register-label"
             />
 
             {!createPassword && <p className="">At least 8 characters long</p>}
@@ -115,14 +111,11 @@ function Register() {
                 change={handleConfirmPassword}
                 type="password"
                 placeholder=""
-                divClass="miniForm-in-register"
-                inputClass="form-control register-input"
-                labelClass="register-label"
             />
 
             {!confirmPassword && <p className="">Please match both passwords</p>}
 
-            {disableButton ? <Link to="/"><button type="button" class="">Register Now</button></Link> : <Link><button type="button" class="" disabled>Register Now</button></Link>}
+            {disableButton ? <Link to="/"><button type="button" className="register-button">Register Now</button></Link> : <Link><button type="button" className="register-button" disabled>Register Now</button></Link>}
         </div>
         <Footer />
     </div>

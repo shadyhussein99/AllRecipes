@@ -40,3 +40,7 @@ a {
 .about-a {
     @apply inline-block col-span-1 hover:border-b-2 hover:border-orange-600 mb-2
 }
+
+.register-button {
+    @apply cursor-pointer mt-10 bg-orange-600 text-white rounded-2xl text-xl px-7 py-2 hover:border-2 hover:bg-white hover:border-orange-600 hover:text-orange-600 transition ease-out duration-300
+}
