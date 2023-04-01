@@ -9,6 +9,7 @@ import FourthRecipeDescription from './components/recipesDescription/FourthRecip
 import FifthRecipeDescription from './components/recipesDescription/FifthRecipeDescription'
 import SixthRecipeDescription from './components/recipesDescription/sixthRecipeDescription'
 import Register from './components/Register'
+import Login from './components/Login'
 
 import {
   createBrowserRouter,
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
   {
     path: "register",
     element: <Register />,
+  },
+  {
+    path: "login",
+    element: <Login />,
   },
 ]);
 
