@@ -6,40 +6,38 @@ import MiniAbout from "./MiniAbout";
 import Footer from "./Footer";
 
 function About() {
-    return <div>
+    return <section>
 
         <Navbar />
 
-        <div className=" mb-32 mx-8 sm:mx-16 md:grid md:grid-cols-4 lg:mx-24 xl:mx-44">
-            <div className=" bg-gray-100 mt-10 pb-5 md:col-span-1 xl:w-60 ">
-
-                <div className="pl-5 md:sticky md:top-36 ">
+        <section className=" mb-32 mx-8 sm:mx-16 md:grid md:grid-cols-4 lg:mx-24 xl:mx-44">
+            <aside className=" bg-gray-100 mt-10 pb-5 md:col-span-1 xl:w-60 ">
+                <section className="pl-5 md:sticky md:top-36 ">
                     <h5 className="font-bold pt-7 text-xl">In this article</h5>
-
-                    <div className="mt-4">
-                        <div>
+                    <section className="mt-4">
+                        <section>
                             <a className="about-a" href="#AboutAllRecipes">About AllRecipes</a>
-                        </div>
-                        <div>
+                        </section>
+                        <section>
                             <a className="about-a" href="#AllRecipesMagazine">AllRecipes Magazine</a>
-                        </div>
-                        <div>
+                        </section>
+                        <section>
                             <a className="about-a" href="#AllRecipesCommunity">AllRecipes Community</a>
-                        </div>
-                        <div>
+                        </section>
+                        <section>
                             <a className="about-a" href="#CommunityGuidelines">Community Guidelines</a>
-                        </div>
-                        <div>
+                        </section>
+                        <section>
                             <a className="about-a" href="#DiversityAndInclusion">Diversity and Inclusion</a>
-                        </div>
-                        <div>
+                        </section>
+                        <section>
                             <a className="about-a" href="#EditorialGuidelines">Editorial Guidelines</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        </section>
+                    </section>
+                </section>
+            </aside>
 
-            <div className=" mt-12 md:col-span-3 md:ml-12 lg:mx-24">
+            <section className=" mt-12 md:col-span-3 md:ml-12 lg:mx-24">
 
                 <h2 className="text-4xl font-bold md:text-5xl">About Us</h2>
 
@@ -85,11 +83,11 @@ function About() {
                     secondParagraph="Original illustrations, graphics, images, and videos are created by internal teams who collaborate with experts in their fields to produce assets that represent diverse voices, perspectives, and contexts. Photos and videos are not edited in any way that may cause them to be false or misleading."
                 />
 
-            </div>
-        </div>
+            </section>
+        </section>
 
         <Footer />
-    </div>
+    </section>
 }
 
 export default About

@@ -60,11 +60,11 @@ function Register() {
             }
         }, [validEmail, Password, emailChange, PasswordChange])
 
-    return <div>
+    return <section>
 
         <Navbar />
 
-        <div className="my-16 mx-20 rounded-2xl shadow-xl p-8 sm:mx-32 md:mx-48 md:my-24 lg:mx-80 xl:mx-96 xl:px-20">
+        <section className="my-16 mx-20 rounded-2xl shadow-xl p-8 sm:mx-32 md:mx-48 md:my-24 lg:mx-80 xl:mx-96 xl:px-20">
             <img className="w-28 rounded-2xl" src="/pics/spoon.png" alt="earth-pic" />
             <h3 className=" text-3xl font-bold text-orange-600 mt-6">Create your account</h3>
 
@@ -87,18 +87,17 @@ function Register() {
             {!Password && <p className="text-red-500 text-sm">At least 8 characters long</p>}
 
             {disableButton ?
-
                 <Link to="/"><div className="flex justify-center">
                     <button type="button" className="register-button cursor-pointer hover:border-2 hover:bg-white hover:border-orange-600 hover:text-orange-600 transition ease-out duration-300">Login</button>
                 </div></Link> :
-
+                
                 <Link><div className="flex justify-center">
                     <button type="button" className="register-button brightness-75" disabled>Login</button>
                 </div></Link>}
 
-        </div>
+        </section>
         <Footer />
-    </div>
+    </section>
 }
 
 export default Register

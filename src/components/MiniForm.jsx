@@ -4,10 +4,10 @@
 import React from "react"
 
 function MiniForm(props) {
-    return <div className=" mt-6" >
+    return <section className=" mt-6" >
         <label className=" text-2xl font-semibold"><h5>{props.label}</h5></label>
         <input onChange={props.change} value={props.value} className="border border-orange-500 rounded-xl mt-3 w-full pl-2" type={props.type} placeholder={props.placeholder} />
-    </div>
+    </section>
 }
 
 export default MiniForm

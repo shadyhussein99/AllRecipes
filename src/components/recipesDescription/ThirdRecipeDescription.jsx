@@ -5,7 +5,7 @@ import MiniRecipesDescription from "./MiniRecipesDescription";
 import SVGStar from "../SVGStar";
 
 function ThirdRecipeDescription() {
-    return <div>
+    return <article>
         <MiniRecipesDescription 
         
             heading="Easy Korean Ground Beef Bowl"
@@ -44,7 +44,7 @@ function ThirdRecipeDescription() {
 
             step4="Serve over hot cooked rice; garnish with sesame seeds and remaining green onions."
         />
-    </div>
+    </article>
 }
 
 export default ThirdRecipeDescription

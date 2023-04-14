@@ -4,7 +4,7 @@ import React from "react";
 
 function MiniAbout(props) {
 
-    return <div id={props.id} className="mt-10">
+    return <section id={props.id} className="mt-10">
 
         <h3 className="text-orange-600 text-3xl font-bold mb-6">{props.heading}</h3>
 
@@ -12,7 +12,7 @@ function MiniAbout(props) {
 
         <p>{props.secondParagraph}</p>
 
-    </div>
+    </section>
 }
 
 export default MiniAbout

@@ -5,7 +5,7 @@ import MiniRecipesDescription from "./MiniRecipesDescription";
 import SVGStar from "../SVGStar";
 
 function FifthRecipeDescription() {
-    return <div>
+    return <article>
         <MiniRecipesDescription 
         
             heading="Salmon Tacos with Mango Salsa"
@@ -44,7 +44,7 @@ function FifthRecipeDescription() {
 
             step4="Divide salmon among tortillas. Top with mango salsa, special sauce, shredded cabbage, avocados, and remaining cilantro. Wrap up tacos and serve lime wedges alongside."
         />
-    </div>
+    </article>
 }
 
 export default FifthRecipeDescription

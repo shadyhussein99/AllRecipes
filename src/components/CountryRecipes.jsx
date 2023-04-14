@@ -3,17 +3,17 @@
 import React from "react";
 
 function CountryRecipes(props) {
-    return <div className="grid grid-cols-3 my-8">
+    return <section className="grid grid-cols-3 my-8">
 
-        <div className="col-span-1 w-32 ml-auto lg:w-40 lg:relative lg:left-10 xl:relative xl:left-28">
+        <section className="col-span-1 w-32 ml-auto lg:w-40 lg:relative lg:left-10 xl:relative xl:left-28">
             <img src={props.recipeImage} alt="recipe-pic" />
-        </div>
+        </section>
 
-        <div className="col-span-2 ml-6 flex items-center font-bold mr-8 lg:ml-16 xl:ml-36">
+        <section className="col-span-2 ml-6 flex items-center font-bold mr-8 lg:ml-16 xl:ml-36">
             <p className="text-xl lg:text-2xl">{props.recipeName}</p>
-        </div>
+        </section>
 
-    </div>
+    </section>
 }
 
 export default CountryRecipes

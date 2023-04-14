@@ -18,22 +18,21 @@ function Countries(props) {
         , [countryChosen]
     )
 
-    return <div className="bg-gray-100">
+    return <section className="bg-gray-100">
 
-        <div className="flex items-end justify-center">
-            <div className="flex justify-center">
+        <section className="flex items-end justify-center">
+            <section className="flex justify-center">
                 <h2 className=" inline-block mt-24 text-3xl font-bold">Browse Country</h2>
-            </div>
+            </section>
 
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 ml-3 text-orange-600">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
             </svg>
+        </section>
 
-        </div>
 
-
-        <div className="flex justify-center pb-16 lg:pb-28">
-            <div className="mt-16 grid grid-cols-5 justify-center md:grid-cols-7">
+        <section className="flex justify-center pb-16 lg:pb-28">
+            <section className="mt-16 grid grid-cols-5 justify-center md:grid-cols-7">
                 <img
                     onClick={() => { setCountryChosen("american") }}
                     className="flag"
@@ -158,10 +157,10 @@ function Countries(props) {
                     onClick={() => { setCountryChosen("turkish") }}
                     className="flag"
                     src="/pics/countries/turkish.PNG" alt="country-flag" />
-            </div>
-        </div>
+            </section>
+        </section>
 
-    </div>
+    </section>
 }
 
 export default Countries

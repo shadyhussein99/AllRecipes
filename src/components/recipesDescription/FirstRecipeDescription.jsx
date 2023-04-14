@@ -5,7 +5,7 @@ import MiniRecipesDescription from "./MiniRecipesDescription";
 import SVGStar from "../SVGStar";
 
 function FirstRecipeDescription() {
-    return <div>
+    return <article>
         <MiniRecipesDescription 
         
             heading="Carrot Cake Ice Cream"
@@ -44,7 +44,7 @@ function FirstRecipeDescription() {
 
             step4="Transfer mixture into a chilled airtight container and place a piece of plastic wrap directly onto the mixture. Cover with a lid and freeze until solid, at least 4 hours, but best overnight."
         />
-    </div>
+    </article>
 }
 
 export default FirstRecipeDescription

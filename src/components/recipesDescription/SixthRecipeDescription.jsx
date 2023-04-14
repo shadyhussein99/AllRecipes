@@ -5,7 +5,7 @@ import MiniRecipesDescription from "./MiniRecipesDescription";
 import SVGStar from "../SVGStar";
 
 function SixthRecipeDescription() {
-    return <div>
+    return <article>
         <MiniRecipesDescription 
         
             heading="Gochujang Noodles"
@@ -44,7 +44,7 @@ function SixthRecipeDescription() {
 
             step4="Top with cucumber, remaining 1/4 cup scallions, and sesame seeds. Drizzle with sesame oil and serve warm with lime wedges."
         />
-    </div>
+    </article>
 }
 
 export default SixthRecipeDescription

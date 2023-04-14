@@ -5,7 +5,7 @@ import MiniRecipesDescription from "./MiniRecipesDescription";
 import SVGStar from "../SVGStar";
 
 function FourthRecipeDescription() {
-    return <div>
+    return <article>
         <MiniRecipesDescription 
         
             heading="Peanut Butter and Jelly French Toast Casserole"
@@ -44,7 +44,7 @@ function FourthRecipeDescription() {
 
             step4="Bake casserole in the preheated oven, covered, for 30 minutes. Remove foil, and bake until sandwiches start to crisp and turn golden brown, 20 to 30 minutes more. Sprinkle with confectioners sugar or drizzle with maple syrup."
         />
-    </div>
+    </article>
 }
 
 export default FourthRecipeDescription

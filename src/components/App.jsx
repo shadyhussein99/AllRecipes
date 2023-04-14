@@ -14,7 +14,7 @@ function App() {
   const [resultRecipes, setResultRecipes] = useState([])   // State that contains the data of the country recipes
 
   return (
-    <div>
+    <main>
 
       <Navbar />
 
@@ -33,7 +33,7 @@ function App() {
 
       <Footer />
 
-    </div>
+    </main>
   )
 }
 

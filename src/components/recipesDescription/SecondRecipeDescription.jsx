@@ -5,7 +5,7 @@ import MiniRecipesDescription from "./MiniRecipesDescription";
 import SVGStar from "../SVGStar";
 
 function SecondRecipeDescription() {
-    return <div>
+    return <article>
         <MiniRecipesDescription 
         
             heading="Spicy Baked Shrimp"
@@ -44,7 +44,7 @@ function SecondRecipeDescription() {
 
             step4="Bake in the preheated oven until shrimp are bright pink on the outside and the meat is opaque, about 10 minutes."
         />
-    </div>
+    </article>
 }
 
 export default SecondRecipeDescription
